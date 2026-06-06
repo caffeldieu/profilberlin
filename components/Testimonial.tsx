@@ -24,7 +24,7 @@ export default function Testimonial() {
             kein Verkaufsgespräch, keine Empfehlung mit versteckten
             Interessen
           </strong>
-          . Stefan Affeld hat unsere Situation wirklich verstanden — und eine
+          . Stefan Affeld hat unsere Situation wirklich verstanden - und eine
           Strategie entwickelt, die zu uns passt, nicht zu einem
           Produktportfolio.&ldquo;
         </blockquote>

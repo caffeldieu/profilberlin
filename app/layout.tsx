@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title:
-    "Profil Vermögensmanagement GmbH – Unabhängige Vermögensverwaltung Berlin",
+    "Profil Vermögensmanagement GmbH - Unabhängige Vermögensverwaltung Berlin",
   description:
     "Unabhängige Vermögensverwaltung in Berlin. Keine Provisionen, keine Interessenkonflikte. Persönliche Beratung für private und institutionelle Anleger seit 1998.",
   keywords:

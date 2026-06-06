@@ -57,7 +57,7 @@ export default function Hero() {
         >
           Seit über zwei Jahrzehnten betreuen wir private und institutionelle
           Anleger mit einem klaren Prinzip: langfristiges Denken, individuelle
-          Lösungen, konsequentes Handeln — ohne Interessenkonflikte.
+          Lösungen, konsequentes Handeln - ohne Interessenkonflikte.
         </motion.p>
 
         <motion.div

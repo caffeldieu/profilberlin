@@ -84,7 +84,7 @@ export default function Contact() {
         </RevealWrapper>
         <RevealWrapper delay={0.2}>
           <p className="body-text-dark mt-4 max-w-[340px]">
-            Wir freuen uns auf ein unverbindliches Erstgespräch — persönlich in
+            Wir freuen uns auf ein unverbindliches Erstgespräch - persönlich in
             Berlin oder per Videokonferenz.
           </p>
         </RevealWrapper>
@@ -97,6 +97,7 @@ export default function Contact() {
               value: `${COMPANY.manager}\n${COMPANY.managerRole}`,
             },
             { key: "Firma", value: COMPANY.name },
+            { key: "Telefon", value: COMPANY.phone },
             { key: "E-Mail", value: COMPANY.email },
           ].map((row, i) => (
             <RevealWrapper key={row.key} delay={0.2 + i * 0.05}>

@@ -25,7 +25,7 @@ export default function Services() {
         <RevealWrapper delay={0.2}>
           <p className="body-text-dark max-w-[420px]">
             Wir bieten ein vollständiges Spektrum an Vermögensdienstleistungen
-            — von der strategischen Allokation bis zur taktischen Steuerung,
+            - von der strategischen Allokation bis zur taktischen Steuerung,
             stets abgestimmt auf Ihre persönliche Lebenssituation, Ihre Ziele
             und Ihren Zeithorizont.
           </p>

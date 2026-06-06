@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import LegalPageLayout, { LegalSection, Placeholder } from "@/components/LegalPageLayout";
+import LegalPageLayout, { LegalSection } from "@/components/LegalPageLayout";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "AGB – Profil Vermögensmanagement GmbH",
+  title: "AGB - Profil Vermögensmanagement GmbH",
   description:
     "Allgemeine Geschäftsbedingungen der Profil Vermögensmanagement GmbH.",
   robots: { index: true, follow: true },
@@ -15,7 +15,7 @@ export default function AGBPage() {
       <p className="body-text-dark">
         der {COMPANY.name}
         <br />
-        Stand: <Placeholder>Juni 2026</Placeholder>
+        Stand: Juni 2026
       </p>
 
       <p className="rounded border border-amber-300 bg-amber-50 px-4 py-3 text-[13px] leading-[1.7] text-ink/90">
@@ -149,7 +149,7 @@ export default function AGBPage() {
           typischen Schadens.
         </p>
         <p>
-          (3) Eine weitergehende Haftung ist — soweit gesetzlich zulässig —
+          (3) Eine weitergehende Haftung ist - soweit gesetzlich zulässig -
           ausgeschlossen.
         </p>
         <p>
@@ -194,7 +194,7 @@ export default function AGBPage() {
         </p>
         <p>
           (2) Ausschließlicher Gerichtsstand für alle Streitigkeiten aus oder im
-          Zusammenhang mit der Geschäftsbeziehung ist — soweit gesetzlich zulässig —
+          Zusammenhang mit der Geschäftsbeziehung ist - soweit gesetzlich zulässig -
           Berlin. Gegenüber Verbrauchern gilt diese Vereinbarung nur, soweit der
           Mandant nach Vertragsschluss seinen Wohnsitz oder gewöhnlichen Aufenthalt
           ins Ausland verlegt oder sein Wohnsitz oder gewöhnlicher Aufenthalt im
@@ -224,7 +224,7 @@ export default function AGBPage() {
         <br />
         Geschäftsführer: {COMPANY.manager}
         <br />
-        Stand: <Placeholder>Juni 2026</Placeholder>
+        Stand: Juni 2026
       </p>
     </LegalPageLayout>
   );

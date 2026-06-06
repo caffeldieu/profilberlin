@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
 
-    // Formspree AJAX submission — see https://help.formspree.io/hc/en-us/articles/360013470814
+    // Formspree AJAX submission - see https://help.formspree.io/hc/en-us/articles/360013470814
     const formspreePayload = {
       vorname: body.vorname,
       nachname: body.nachname,

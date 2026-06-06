@@ -3,7 +3,7 @@ import LegalPageLayout, { LegalSection, Placeholder } from "@/components/LegalPa
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Impressum – Profil Vermögensmanagement GmbH",
+  title: "Impressum - Profil Vermögensmanagement GmbH",
   description: "Impressum und rechtliche Angaben der Profil Vermögensmanagement GmbH gemäß § 5 DDG.",
   robots: { index: true, follow: true },
 };
@@ -34,7 +34,10 @@ export default function ImpressumPage() {
 
       <LegalSection title="Kontakt">
         <p>
-          Telefon: <Placeholder>[BITTE EINTRAGEN — Telefonnummer ist nach § 5 DDG faktisch Pflicht für schnelle Kontaktaufnahme]</Placeholder>
+          Telefon:{" "}
+          <a href={`tel:${COMPANY.phone}`} className="font-semibold text-forest-700 underline hover:text-forest-900">
+            {COMPANY.phone}
+          </a>
           <br />
           E-Mail:{" "}
           <a href={`mailto:${COMPANY.email}`} className="font-semibold text-forest-700 underline hover:text-forest-900">
@@ -49,10 +52,18 @@ export default function ImpressumPage() {
         <p>
           Eingetragen im Handelsregister
           <br />
-          Registergericht: Amtsgericht Charlottenburg (Berlin)
+          Registergericht: {COMPANY.registerCourt}
           <br />
-          Registernummer: HRB <Placeholder>[BITTE EINTRAGEN]</Placeholder>
+          Registernummer: {COMPANY.registerNumber}
         </p>
+      </LegalSection>
+
+      <LegalSection title="LEI (Legal Entity Identifier)">
+        <p>{COMPANY.lei}</p>
+      </LegalSection>
+
+      <LegalSection title="EUID (European Unique Identifier)">
+        <p>{COMPANY.euid}</p>
       </LegalSection>
 
       <LegalSection title="Umsatzsteuer-Identifikationsnummer">
@@ -60,14 +71,6 @@ export default function ImpressumPage() {
           gemäß § 27a Umsatzsteuergesetz:
           <br />
           DE <Placeholder>[BITTE EINTRAGEN]</Placeholder>
-        </p>
-      </LegalSection>
-
-      <LegalSection title="Wirtschafts-Identifikationsnummer">
-        <p>
-          gemäß § 139c Abgabenordnung:
-          <br />
-          <Placeholder>[Falls bereits zugeteilt — sonst weglassen]</Placeholder>
         </p>
       </LegalSection>
 
@@ -92,7 +95,7 @@ export default function ImpressumPage() {
 
       <LegalSection title="BaFin-Institutsnummer / Erlaubnis">
         <p>
-          <Placeholder>[BITTE EINTRAGEN — Ihre BaFin-Institutsnummer]</Placeholder>
+          <Placeholder>[BITTE EINTRAGEN - Ihre BaFin-Institutsnummer]</Placeholder>
           <br />
           Erlaubnis nach § 15 Wertpapierinstitutsgesetz (WpIG) bzw. § 32 Kreditwesengesetz (KWG)
           zur Erbringung der Finanzportfolioverwaltung und Anlageberatung.
@@ -120,7 +123,7 @@ export default function ImpressumPage() {
 
       <LegalSection title="Berufshaftpflichtversicherung">
         <p>
-          <Placeholder>[BITTE EINTRAGEN — Name und Anschrift des Versicherers]</Placeholder>
+          <Placeholder>[BITTE EINTRAGEN - Name und Anschrift des Versicherers]</Placeholder>
           <br />
           Geltungsbereich: Deutschland / Europa
         </p>
@@ -175,7 +178,7 @@ export default function ImpressumPage() {
         </p>
       </LegalSection>
 
-      <LegalSection title="Haftungsausschluss — Inhalt des Onlineangebotes">
+      <LegalSection title="Haftungsausschluss - Inhalt des Onlineangebotes">
         <p>
           Wir übernehmen keine Gewähr für die Aktualität, Korrektheit, Vollständigkeit
           oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen
@@ -213,7 +216,7 @@ export default function ImpressumPage() {
       </LegalSection>
 
       <p className="text-[13px] font-medium text-ink/80">
-        Stand: <Placeholder>[Monat Jahr]</Placeholder>
+        Stand: Juni 2026
       </p>
     </LegalPageLayout>
   );

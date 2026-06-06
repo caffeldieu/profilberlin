@@ -28,14 +28,14 @@ export default function Philosophy() {
           <p className="body-text-dark mt-6 max-w-[400px]">
             Als unabhängige Vermögensverwaltung stehen wir ausschließlich im
             Interesse unserer Mandanten. Keine Provisionen, keine
-            Interessenkonflikte — nur klare, langfristig orientierte Beratung
+            Interessenkonflikte - nur klare, langfristig orientierte Beratung
             auf Basis tiefer Marktkenntnis und jahrzehntelanger Erfahrung.
           </p>
         </RevealWrapper>
         <RevealWrapper delay={0.3}>
           <p className="body-text-dark mt-4 max-w-[400px]">
             Unser Ansatz ist ganzheitlich: Wir betrachten nicht einzelne
-            Positionen, sondern Ihr gesamtes Vermögen — und entwickeln daraus
+            Positionen, sondern Ihr gesamtes Vermögen - und entwickeln daraus
             eine Strategie, die zu Ihrer Lebenssituation passt.
           </p>
         </RevealWrapper>
@@ -44,7 +44,7 @@ export default function Philosophy() {
       <div className="flex flex-col justify-between bg-forest-700 px-6 py-16 md:px-14 md:py-28">
         <RevealWrapper>
           <blockquote className="border-l-2 border-forest-300 pl-6 text-[1.15rem] font-normal leading-[1.75] tracking-normal text-beige-100">
-            „Kapitalerhalt ist keine Bescheidenheit —
+            „Kapitalerhalt ist keine Bescheidenheit -
             <br />
             es ist die höchste Form von Verantwortung
             <br />

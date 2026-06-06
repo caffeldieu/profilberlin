@@ -22,7 +22,7 @@ export default function SectionLabel({
         className
       )}
     >
-      — {children}
+      - {children}
     </div>
   );
 }

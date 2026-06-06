@@ -110,7 +110,7 @@ export default function LogoMark({
       <Link
         href={href}
         className="no-underline"
-        aria-label="Profil Vermögensmanagement — Startseite"
+        aria-label="Profil Vermögensmanagement - Startseite"
       >
         {content}
       </Link>

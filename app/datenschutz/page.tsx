@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import LegalPageLayout, { LegalSection, Placeholder } from "@/components/LegalPageLayout";
+import LegalPageLayout, { LegalSection } from "@/components/LegalPageLayout";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung – Profil Vermögensmanagement GmbH",
+  title: "Datenschutzerklärung - Profil Vermögensmanagement GmbH",
   description:
     "Datenschutzerklärung der Profil Vermögensmanagement GmbH gemäß DSGVO.",
   robots: { index: true, follow: true },
@@ -53,7 +53,10 @@ export default function DatenschutzPage() {
           Deutschland
         </p>
         <p>
-          Telefon: <Placeholder>[BITTE EINTRAGEN]</Placeholder>
+          Telefon:{" "}
+          <a href={`tel:${COMPANY.phone}`} className="font-semibold text-forest-700 underline hover:text-forest-900">
+            {COMPANY.phone}
+          </a>
           <br />
           E-Mail:{" "}
           <a href={`mailto:${COMPANY.email}`} className="font-semibold text-forest-700 underline hover:text-forest-900">
@@ -74,7 +77,7 @@ export default function DatenschutzPage() {
         </p>
       </LegalSection>
 
-      <LegalSection title="4. Ihre Rechte (Art. 15 – 21 DSGVO)">
+      <LegalSection title="4. Ihre Rechte (Art. 15 - 21 DSGVO)">
         <p>Sie haben jederzeit das Recht:</p>
         <ul className="list-disc space-y-2 pl-5">
           <li>unentgeltlich Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten (Art. 15 DSGVO);</li>
@@ -158,7 +161,7 @@ export default function DatenschutzPage() {
           Speicherdauer: Wir verarbeiten Ihre Daten so lange, wie dies zur
           Bearbeitung Ihrer Anfrage erforderlich ist. Im Falle einer
           Vertragsanbahnung bzw. eines Vertragsschlusses gelten die gesetzlichen
-          Aufbewahrungspflichten (insb. § 257 HGB, § 147 AO — bis zu 10 Jahre).
+          Aufbewahrungspflichten (insb. § 257 HGB, § 147 AO - bis zu 10 Jahre).
         </p>
         <p>
           Verschlüsselung: Die Übertragung der Formulardaten erfolgt verschlüsselt
@@ -280,8 +283,8 @@ export default function DatenschutzPage() {
         </p>
         <ul className="list-disc space-y-1 pl-5">
           <li>Wertpapierhandelsgesetz (WpHG)</li>
-          <li>Geldwäschegesetz (GwG) — Identifizierungspflichten</li>
-          <li>Abgabenordnung (AO) — steuerliche Aufbewahrungspflichten</li>
+          <li>Geldwäschegesetz (GwG) - Identifizierungspflichten</li>
+          <li>Abgabenordnung (AO) - steuerliche Aufbewahrungspflichten</li>
           <li>Kreditwesengesetz (KWG) und Wertpapierinstitutsgesetz (WpIG)</li>
         </ul>
         <p>
@@ -292,7 +295,7 @@ export default function DatenschutzPage() {
 
       <LegalSection title="11. Aktualität und Änderungen dieser Datenschutzerklärung">
         <p>
-          Diese Datenschutzerklärung hat den Stand <Placeholder>Juni 2026</Placeholder>.
+          Diese Datenschutzerklärung hat den Stand Juni 2026.
         </p>
         <p>
           Durch die Weiterentwicklung unserer Website oder aufgrund geänderter

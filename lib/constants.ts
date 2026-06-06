@@ -14,12 +14,17 @@ export const COMPANY = {
   shortName: "Profil Vermögensmanagement",
   address: "Sächsische Str. 62",
   city: "D-10707 Berlin",
-  email: "info@profilberlin.de",
+  email: "affeld@profilberlin.de",
+  phone: "01778851336",
   website: "www.profilberlin.de",
   url: "https://www.profilberlin.de",
   manager: "Stefan Affeld",
   managerRole: "Geschäftsführer",
   founded: "1998",
+  registerCourt: "Amtsgericht Charlottenburg (Berlin)",
+  registerNumber: "HRB 91232 B",
+  lei: "391200ZJQ0RUJLN2AM89",
+  euid: "DEF1103R.HRB91232B",
 } as const;
 
 export const NAV_LINKS: NavLink[] = [
@@ -62,7 +67,7 @@ export const SERVICES: Service[] = [
     number: "02",
     title: "Anlageberatung",
     description:
-      "Unabhängige, provisionsfreie Beratung zu Investitionsentscheidungen — auf Basis eigener, tiefgehender Kapitalmarktanalyse.",
+      "Unabhängige, provisionsfreie Beratung zu Investitionsentscheidungen - auf Basis eigener, tiefgehender Kapitalmarktanalyse.",
   },
   {
     number: "03",
@@ -74,7 +79,7 @@ export const SERVICES: Service[] = [
     number: "04",
     title: "Risikoanalyse",
     description:
-      "Systematische Bewertung und aktive Steuerung aller Portfoliorisiken — transparent, nachvollziehbar und jederzeit dokumentiert.",
+      "Systematische Bewertung und aktive Steuerung aller Portfoliorisiken - transparent, nachvollziehbar und jederzeit dokumentiert.",
   },
   {
     number: "05",
@@ -86,7 +91,7 @@ export const SERVICES: Service[] = [
     number: "06",
     title: "Reporting & Controlling",
     description:
-      "Konsolidiertes, individuelles Reporting über alle Vermögenswerte und Assetklassen — klar, präzise und jederzeit abrufbar.",
+      "Konsolidiertes, individuelles Reporting über alle Vermögenswerte und Assetklassen - klar, präzise und jederzeit abrufbar.",
   },
 ];
 
@@ -94,7 +99,7 @@ export const WHY_US_ITEMS: WhyUsItem[] = [
   {
     icon: "Shield",
     title: "Vollständige Unabhängigkeit",
-    text: "Wir erhalten keine Provisionen oder Vergütungen von Produktanbietern. Unser einziges Interesse ist Ihr Vermögen — und seine langfristige Entwicklung.",
+    text: "Wir erhalten keine Provisionen oder Vergütungen von Produktanbietern. Unser einziges Interesse ist Ihr Vermögen - und seine langfristige Entwicklung.",
   },
   {
     icon: "Clock",
@@ -109,12 +114,12 @@ export const WHY_US_ITEMS: WhyUsItem[] = [
   {
     icon: "BarChart2",
     title: "Transparentes Pricing",
-    text: "Unsere Vergütung ist klar, fair und ausschließlich honorarbasiert. Sie wissen jederzeit, was Sie zahlen — und wofür.",
+    text: "Unsere Vergütung ist klar, fair und ausschließlich honorarbasiert. Sie wissen jederzeit, was Sie zahlen - und wofür.",
   },
   {
     icon: "LayoutGrid",
     title: "Ganzheitlicher Blick",
-    text: "Wir betrachten Ihr Gesamtvermögen: liquide Assets, Immobilien, Beteiligungen, Vorsorge und Verbindlichkeiten — alles in einer konsolidierten Sicht.",
+    text: "Wir betrachten Ihr Gesamtvermögen: liquide Assets, Immobilien, Beteiligungen, Vorsorge und Verbindlichkeiten - alles in einer konsolidierten Sicht.",
   },
   {
     icon: "CheckCircle",
@@ -128,7 +133,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     number: "01",
     title: "Erstgespräch & Bedarfsanalyse",
     description:
-      "Wir lernen Sie kennen — Ihre Ziele, Ihre Lebenssituation und Ihren Zeithorizont. Kein Produkt, kein Pitch. Nur ein ehrliches Gespräch über das, was wirklich zählt.",
+      "Wir lernen Sie kennen - Ihre Ziele, Ihre Lebenssituation und Ihren Zeithorizont. Kein Produkt, kein Pitch. Nur ein ehrliches Gespräch über das, was wirklich zählt.",
   },
   {
     number: "02",
@@ -140,7 +145,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     number: "03",
     title: "Umsetzung & Implementierung",
     description:
-      "Wir setzen die vereinbarte Strategie konsequent und kosteneffizient um — mit Zugang zu allen relevanten Assetklassen und Märkten weltweit.",
+      "Wir setzen die vereinbarte Strategie konsequent und kosteneffizient um - mit Zugang zu allen relevanten Assetklassen und Märkten weltweit.",
   },
   {
     number: "04",
@@ -154,7 +159,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Was ist der Unterschied zur Bankberatung?",
     answer:
-      "Als unabhängige Vermögensverwaltung sind wir nicht an ein Produktportfolio gebunden und erhalten keine Provisionen von Produktanbietern. Wir werden ausschließlich durch eine transparente Honorargebühr vergütet — und stehen damit immer auf Ihrer Seite.",
+      "Als unabhängige Vermögensverwaltung sind wir nicht an ein Produktportfolio gebunden und erhalten keine Provisionen von Produktanbietern. Wir werden ausschließlich durch eine transparente Honorargebühr vergütet - und stehen damit immer auf Ihrer Seite.",
   },
   {
     question: "Ab welchem Vermögen ist eine Zusammenarbeit sinnvoll?",
@@ -164,22 +169,22 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Wie werden Ihre Leistungen vergütet?",
     answer:
-      "Unsere Vergütung erfolgt ausschließlich honorarbasiert — als prozentualer Anteil des verwalteten Vermögens oder als Pauschalhonorar. Keine versteckten Kosten, keine Provisionen, keine Kick-backs.",
+      "Unsere Vergütung erfolgt ausschließlich honorarbasiert - als prozentualer Anteil des verwalteten Vermögens oder als Pauschalhonorar. Keine versteckten Kosten, keine Provisionen, keine Kick-backs.",
   },
   {
     question: "Sind meine Gelder sicher?",
     answer:
-      "Ihr Vermögen liegt stets auf Ihren eigenen Depots bei einer deutschen Depotbank. Wir haben nur eine Anlagevollmacht — Zugriff auf Ihre Gelder ist für uns nicht möglich. Wir sind als Finanzportfolioverwalter bei der BaFin zugelassen.",
+      "Ihr Vermögen liegt stets auf Ihren eigenen Depots bei einer deutschen Depotbank. Wir haben nur eine Anlagevollmacht - Zugriff auf Ihre Gelder ist für uns nicht möglich. Wir sind als Finanzportfolioverwalter bei der BaFin zugelassen.",
   },
   {
     question: "Wie läuft ein Erstgespräch ab?",
     answer:
-      "Das Erstgespräch ist kostenfrei und unverbindlich — persönlich in Berlin oder per Videokonferenz. Wir hören zu, stellen Fragen und erläutern unsere Arbeitsweise. Keine Produktpräsentationen, kein Verkaufsdruck.",
+      "Das Erstgespräch ist kostenfrei und unverbindlich - persönlich in Berlin oder per Videokonferenz. Wir hören zu, stellen Fragen und erläutern unsere Arbeitsweise. Keine Produktpräsentationen, kein Verkaufsdruck.",
   },
   {
     question: "Wie oft werde ich über mein Portfolio informiert?",
     answer:
-      "Sie erhalten regelmäßige schriftliche Reports sowie persönliche Quartals- oder Halbjahresgespräche. Bei bedeutenden Marktentwicklungen kommunizieren wir proaktiv — ohne auf Ihre Nachfrage zu warten.",
+      "Sie erhalten regelmäßige schriftliche Reports sowie persönliche Quartals- oder Halbjahresgespräche. Bei bedeutenden Marktentwicklungen kommunizieren wir proaktiv - ohne auf Ihre Nachfrage zu warten.",
   },
 ];
 
