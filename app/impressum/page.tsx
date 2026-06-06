@@ -14,7 +14,7 @@ export default function ImpressumPage() {
       <div className="mx-auto max-w-3xl">
         <Link
           href="/"
-          className="mb-10 inline-block text-[9px] font-semibold uppercase tracking-nav text-forest-600 transition-colors hover:text-forest-800"
+          className="mb-10 inline-block text-[12px] font-semibold uppercase tracking-[0.12em] text-forest-700 transition-colors hover:text-forest-900"
         >
           ← Zurück zur Startseite
         </Link>
@@ -25,7 +25,7 @@ export default function ImpressumPage() {
 
         <div className="space-y-8 body-text-dark">
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               Angaben gemäß § 5 TMG
             </h2>
             <p>
@@ -41,7 +41,7 @@ export default function ImpressumPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               Kontakt
             </h2>
             <p>
@@ -55,7 +55,7 @@ export default function ImpressumPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               Registereintrag
             </h2>
             <p>
@@ -68,7 +68,7 @@ export default function ImpressumPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               Aufsichtsbehörde
             </h2>
             <p>
@@ -88,14 +88,14 @@ export default function ImpressumPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               Umsatzsteuer-ID
             </h2>
             <p>[USt-IdNr. eintragen]</p>
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               Haftungshinweis
             </h2>
             <p>
@@ -107,7 +107,7 @@ export default function ImpressumPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               Streitschlichtung
             </h2>
             <p>

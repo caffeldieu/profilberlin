@@ -13,23 +13,23 @@ const sizes = {
   sm: {
     box: "h-[30px] w-[30px] border",
     circle: "h-[18px] w-[18px] border",
-    letter: "text-[8px]",
-    top: "text-[10px]",
-    sub: "text-[8px]",
+    letter: "text-[11px]",
+    top: "text-[12px]",
+    sub: "text-[11px]",
   },
   md: {
     box: "h-9 w-9 border-[1.5px]",
     circle: "h-[22px] w-[22px] border-[1.5px]",
-    letter: "text-[9px]",
-    top: "text-[11px]",
-    sub: "text-[8px]",
+    letter: "text-[11px]",
+    top: "text-[12px]",
+    sub: "text-[11px]",
   },
   lg: {
     box: "h-[100px] w-[100px] border",
     circle: "h-[66px] w-[66px] border",
-    letter: "text-[11px]",
-    top: "text-[11px]",
-    sub: "text-[8px]",
+    letter: "text-[13px]",
+    top: "text-[13px]",
+    sub: "text-[11px]",
   },
 };
 
@@ -43,14 +43,14 @@ export default function LogoMark({
   const s = sizes[size];
 
   const borderColor = dark
-    ? "border-beige-200/25"
-    : "border-forest-700";
+    ? "border-beige-200/70"
+    : "border-forest-800";
   const letterColor = dark
-    ? "text-beige-200/60"
-    : "text-forest-700";
+    ? "text-beige-100"
+    : "text-forest-800";
   const letterBg = dark ? "bg-forest-800" : "bg-beige-200";
-  const topColor = dark ? "text-beige-200" : "text-forest-800";
-  const subColor = dark ? "text-beige-200/30" : "text-mid";
+  const topColor = dark ? "text-beige-100" : "text-forest-900";
+  const subColor = dark ? "text-beige-200/90" : "text-ink/85";
 
   const content = (
     <div className={cn("flex items-center gap-3.5", className)}>
@@ -84,7 +84,7 @@ export default function LogoMark({
         <div className="flex flex-col gap-px">
           <span
             className={cn(
-              "font-bold uppercase tracking-nav",
+              "font-bold uppercase tracking-[0.14em]",
               s.top,
               topColor
             )}
@@ -93,7 +93,7 @@ export default function LogoMark({
           </span>
           <span
             className={cn(
-              "font-light uppercase tracking-[0.22em]",
+              "font-normal uppercase tracking-[0.14em]",
               s.sub,
               subColor
             )}

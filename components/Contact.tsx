@@ -74,12 +74,12 @@ export default function Contact() {
           <SectionLabel>Kontakt</SectionLabel>
         </RevealWrapper>
         <RevealWrapper delay={0.1}>
-          <h2 className="section-heading text-[clamp(1.8rem,2.6vw,3.2rem)] text-forest-800">
+          <h2 className="section-heading text-[clamp(1.8rem,2.6vw,3.2rem)] text-forest-900">
             Sprechen
             <br />
             Sie mit
             <br />
-            <span className="section-heading-thin text-forest-800/30">uns.</span>
+            <span className="section-heading-thin-dark">uns.</span>
           </h2>
         </RevealWrapper>
         <RevealWrapper delay={0.2}>
@@ -101,10 +101,10 @@ export default function Contact() {
           ].map((row, i) => (
             <RevealWrapper key={row.key} delay={0.2 + i * 0.05}>
               <div className="flex gap-6">
-                <span className="min-w-[60px] pt-0.5 text-[7px] font-bold uppercase tracking-[0.32em] text-forest-400">
+                <span className="min-w-[72px] pt-0.5 text-[11px] font-bold uppercase tracking-[0.14em] text-forest-700">
                   {row.key}
                 </span>
-                <span className="whitespace-pre-line text-[11.5px] font-light leading-[1.7] tracking-wide text-mid">
+                <span className="whitespace-pre-line text-[14px] font-normal leading-[1.7] tracking-normal text-ink/90">
                   {row.value}
                 </span>
               </div>
@@ -133,7 +133,7 @@ export default function Contact() {
 
         {status === "success" && (
           <div
-            className="mb-8 border border-forest-400 bg-forest-700/10 px-6 py-4 text-[11px] font-light leading-[2] text-forest-700"
+            className="mb-8 border border-forest-500 bg-forest-700/10 px-6 py-4 text-[14px] font-normal leading-[1.8] text-forest-800"
             role="status"
           >
             Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.
@@ -142,7 +142,7 @@ export default function Contact() {
 
         {status === "error" && (
           <div
-            className="mb-8 border border-red-300 bg-red-50 px-6 py-4 text-[11px] font-light leading-[2] text-red-800"
+            className="mb-8 border border-red-400 bg-red-50 px-6 py-4 text-[14px] font-normal leading-[1.8] text-red-900"
             role="alert"
           >
             Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es
@@ -153,76 +153,76 @@ export default function Contact() {
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-8" noValidate>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="vorname" className="text-[7px] font-bold uppercase tracking-[0.32em] text-dim">
+              <label htmlFor="vorname" className="text-[11px] font-bold uppercase tracking-[0.14em] text-ink/85">
                 Vorname
               </label>
               <input
                 id="vorname"
                 type="text"
                 placeholder="Max"
-                className="border-b border-beige-500 bg-transparent py-3 text-[11.5px] font-light tracking-wide text-ink outline-none transition-colors focus:border-forest-600"
+                className="border-b-2 border-beige-600 bg-transparent py-3 text-[14px] font-normal tracking-normal text-ink outline-none transition-colors focus:border-forest-700"
                 aria-invalid={!!errors.vorname}
                 {...register("vorname")}
               />
               {errors.vorname && (
-                <span className="text-[10px] text-red-600">{errors.vorname.message}</span>
+                <span className="text-[12px] font-medium text-red-700">{errors.vorname.message}</span>
               )}
             </div>
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="nachname" className="text-[7px] font-bold uppercase tracking-[0.32em] text-dim">
+              <label htmlFor="nachname" className="text-[11px] font-bold uppercase tracking-[0.14em] text-ink/85">
                 Nachname
               </label>
               <input
                 id="nachname"
                 type="text"
                 placeholder="Mustermann"
-                className="border-b border-beige-500 bg-transparent py-3 text-[11.5px] font-light tracking-wide text-ink outline-none transition-colors focus:border-forest-600"
+                className="border-b-2 border-beige-600 bg-transparent py-3 text-[14px] font-normal tracking-normal text-ink outline-none transition-colors focus:border-forest-700"
                 aria-invalid={!!errors.nachname}
                 {...register("nachname")}
               />
               {errors.nachname && (
-                <span className="text-[10px] text-red-600">{errors.nachname.message}</span>
+                <span className="text-[12px] font-medium text-red-700">{errors.nachname.message}</span>
               )}
             </div>
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="email" className="text-[7px] font-bold uppercase tracking-[0.32em] text-dim">
+            <label htmlFor="email" className="text-[11px] font-bold uppercase tracking-[0.14em] text-ink/85">
               E-Mail
             </label>
             <input
               id="email"
               type="email"
               placeholder="ihre@email.de"
-              className="border-b border-beige-500 bg-transparent py-3 text-[11.5px] font-light tracking-wide text-ink outline-none transition-colors focus:border-forest-600"
+              className="border-b-2 border-beige-600 bg-transparent py-3 text-[14px] font-normal tracking-normal text-ink outline-none transition-colors focus:border-forest-700"
               aria-invalid={!!errors.email}
               {...register("email")}
             />
             {errors.email && (
-              <span className="text-[10px] text-red-600">{errors.email.message}</span>
+              <span className="text-[12px] font-medium text-red-700">{errors.email.message}</span>
             )}
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="telefon" className="text-[7px] font-bold uppercase tracking-[0.32em] text-dim">
+            <label htmlFor="telefon" className="text-[11px] font-bold uppercase tracking-[0.14em] text-ink/85">
               Telefon (optional)
             </label>
             <input
               id="telefon"
               type="tel"
               placeholder="+49 30 ..."
-              className="border-b border-beige-500 bg-transparent py-3 text-[11.5px] font-light tracking-wide text-ink outline-none transition-colors focus:border-forest-600"
+              className="border-b-2 border-beige-600 bg-transparent py-3 text-[14px] font-normal tracking-normal text-ink outline-none transition-colors focus:border-forest-700"
               {...register("telefon")}
             />
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="thema" className="text-[7px] font-bold uppercase tracking-[0.32em] text-dim">
+            <label htmlFor="thema" className="text-[11px] font-bold uppercase tracking-[0.14em] text-ink/85">
               Thema
             </label>
             <select
               id="thema"
-              className="cursor-pointer appearance-none border-b border-beige-500 bg-transparent py-3 text-[11.5px] font-light tracking-wide text-ink outline-none transition-colors focus:border-forest-600"
+              className="cursor-pointer appearance-none border-b-2 border-beige-600 bg-transparent py-3 text-[14px] font-normal tracking-normal text-ink outline-none transition-colors focus:border-forest-700"
               aria-invalid={!!errors.thema}
               defaultValue=""
               {...register("thema")}
@@ -237,19 +237,19 @@ export default function Contact() {
               ))}
             </select>
             {errors.thema && (
-              <span className="text-[10px] text-red-600">{errors.thema.message}</span>
+              <span className="text-[12px] font-medium text-red-700">{errors.thema.message}</span>
             )}
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="nachricht" className="text-[7px] font-bold uppercase tracking-[0.32em] text-dim">
+            <label htmlFor="nachricht" className="text-[11px] font-bold uppercase tracking-[0.14em] text-ink/85">
               Nachricht (optional)
             </label>
             <textarea
               id="nachricht"
               rows={4}
               placeholder="Kurze Beschreibung Ihres Anliegens …"
-              className="resize-none border-b border-beige-500 bg-transparent py-3 text-[11.5px] font-light tracking-wide text-ink outline-none transition-colors focus:border-forest-600"
+              className="resize-none border-b-2 border-beige-600 bg-transparent py-3 text-[14px] font-normal tracking-normal text-ink outline-none transition-colors focus:border-forest-700"
               {...register("nachricht")}
             />
           </div>
@@ -257,18 +257,18 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="mt-2 self-start border-[1.5px] border-forest-700 bg-forest-700 px-10 py-3.5 text-[8px] font-bold uppercase tracking-[0.25em] text-beige-200 transition-colors hover:border-forest-600 hover:bg-forest-600 disabled:opacity-60"
+            className="mt-2 self-start border-[1.5px] border-forest-800 bg-forest-800 px-10 py-3.5 text-[12px] font-bold uppercase tracking-[0.12em] text-beige-100 transition-colors hover:border-forest-700 hover:bg-forest-700 disabled:opacity-60"
             aria-label="Anfrage senden"
           >
             {status === "loading" ? "Wird gesendet..." : "Anfrage senden"}
           </button>
 
-          <p className="text-[9px] font-light tracking-wide text-dim">
+          <p className="text-[12px] font-normal tracking-normal text-ink/85">
             Das Erstgespräch ist kostenfrei und unverbindlich.
           </p>
-          <p className="text-[9px] font-light tracking-wide text-dim">
+          <p className="text-[12px] font-normal tracking-normal text-ink/85">
             Mit dem Absenden stimmen Sie unserer{" "}
-            <Link href="/datenschutz" className="text-forest-600 underline hover:text-forest-700">
+            <Link href="/datenschutz" className="font-semibold text-forest-700 underline hover:text-forest-900">
               Datenschutzerklärung
             </Link>{" "}
             zu.

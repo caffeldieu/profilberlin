@@ -76,11 +76,11 @@ export default function Navbar() {
                   "nav-link",
                   scrolled
                     ? activeSection === link.id
-                      ? "text-white"
-                      : "text-white/45 hover:text-white"
+                      ? "text-beige-100"
+                      : "text-beige-200/90 hover:text-beige-100"
                     : activeSection === link.id
-                      ? "text-forest-700"
-                      : "text-mid hover:text-forest-700"
+                      ? "text-forest-800"
+                      : "text-ink/85 hover:text-forest-800"
                 )}
               >
                 {link.label}
@@ -93,8 +93,8 @@ export default function Navbar() {
               className={cn(
                 "nav-link border-[1.5px] px-[1.4rem] py-2 transition-all",
                 scrolled
-                  ? "border-forest-400 text-white/70 hover:bg-forest-600 hover:text-white"
-                  : "border-forest-700 text-forest-700 hover:bg-forest-700 hover:text-beige-200"
+                  ? "border-forest-300 text-beige-100 hover:bg-forest-600 hover:text-beige-50"
+                  : "border-forest-800 text-forest-900 hover:bg-forest-800 hover:text-beige-100"
               )}
               aria-label="Gespräch vereinbaren"
             >
@@ -147,7 +147,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={closeMobile}
-                    className="text-lg font-semibold uppercase tracking-nav text-beige-200/70 transition-colors hover:text-beige-200"
+                    className="text-lg font-semibold uppercase tracking-nav text-beige-100 transition-colors hover:text-beige-50"
                   >
                     {link.label}
                   </Link>

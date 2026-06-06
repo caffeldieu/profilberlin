@@ -15,7 +15,7 @@ export default function DatenschutzPage() {
       <div className="mx-auto max-w-3xl">
         <Link
           href="/"
-          className="mb-10 inline-block text-[9px] font-semibold uppercase tracking-nav text-forest-600 transition-colors hover:text-forest-800"
+          className="mb-10 inline-block text-[12px] font-semibold uppercase tracking-[0.12em] text-forest-700 transition-colors hover:text-forest-900"
         >
           ← Zurück zur Startseite
         </Link>
@@ -26,7 +26,7 @@ export default function DatenschutzPage() {
 
         <div className="space-y-8 body-text-dark">
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               1. Verantwortlicher
             </h2>
             <p>
@@ -49,7 +49,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               2. Erhebung und Verarbeitung personenbezogener Daten
             </h2>
             <p>
@@ -64,7 +64,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               3. Kontaktformular
             </h2>
             <p>
@@ -83,7 +83,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               4. Ihre Rechte
             </h2>
             <p>
@@ -106,7 +106,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               5. Cookies
             </h2>
             <p>
@@ -117,7 +117,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               6. Hosting
             </h2>
             <p>
@@ -139,7 +139,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-forest-600">
+            <h2 className="mb-4 text-[12px] font-bold uppercase tracking-[0.14em] text-forest-800">
               7. Kontakt für Datenschutzanfragen
             </h2>
             <p>

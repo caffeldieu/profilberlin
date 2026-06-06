@@ -11,10 +11,10 @@ export default function Services() {
             <SectionLabel>Unsere Leistungen</SectionLabel>
           </RevealWrapper>
           <RevealWrapper delay={0.1}>
-            <h2 className="section-heading text-[clamp(1.8rem,2.6vw,3.2rem)] text-forest-800">
+            <h2 className="section-heading text-[clamp(1.8rem,2.6vw,3.2rem)] text-forest-900">
               Integriertes
               <br />
-              <span className="section-heading-thin text-forest-800/30">
+              <span className="section-heading-thin-dark">
                 Vermögens-
                 <br />
                 management
@@ -32,7 +32,7 @@ export default function Services() {
         </RevealWrapper>
       </div>
 
-      <div className="grid grid-cols-1 gap-px border border-beige-400 bg-beige-400 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-px border border-beige-500 bg-beige-500 md:grid-cols-2 lg:grid-cols-3">
         {SERVICES.map((service, i) => (
           <RevealWrapper
             key={service.number}
@@ -40,15 +40,15 @@ export default function Services() {
             className="bg-beige-200 p-8 transition-colors hover:bg-beige-100 md:p-10"
           >
             <span
-              className="mb-6 block text-[2.5rem] font-thin leading-none tracking-[-0.03em] text-beige-400"
+              className="mb-6 block text-[2.5rem] font-thin leading-none tracking-[-0.03em] text-beige-500"
               aria-hidden="true"
             >
               {service.number}
             </span>
-            <h3 className="mb-3.5 text-[8px] font-bold uppercase tracking-[0.28em] text-forest-600">
+            <h3 className="mb-3.5 text-[11px] font-bold uppercase tracking-[0.16em] text-forest-700">
               {service.title}
             </h3>
-            <p className="text-[11px] font-light leading-[1.95] tracking-wide text-mid">
+            <p className="text-[13px] font-normal leading-[1.75] tracking-normal text-ink/90">
               {service.description}
             </p>
           </RevealWrapper>

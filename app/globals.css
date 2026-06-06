@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply bg-beige-200 text-ink font-sans antialiased overflow-x-hidden;
+  @apply bg-beige-200 text-ink font-sans text-[14px] font-normal antialiased overflow-x-hidden;
 }
 
 ::-webkit-scrollbar {
@@ -24,35 +24,55 @@ body {
 
 @layer components {
   .section-heading {
-    @apply font-extrabold uppercase tracking-section leading-[1.02];
+    @apply font-extrabold uppercase tracking-section leading-[1.08];
   }
 
   .section-heading-thin {
-    @apply font-thin;
+    @apply font-normal;
+  }
+
+  .section-heading-thin-dark {
+    @apply section-heading-thin text-forest-700;
+  }
+
+  .section-heading-thin-light {
+    @apply section-heading-thin text-beige-200/90;
   }
 
   .body-text {
-    @apply text-[11.5px] font-light leading-[2.1] tracking-wide;
+    @apply text-[14px] font-normal leading-[1.8] tracking-normal;
   }
 
   .body-text-dark {
-    @apply body-text text-mid;
+    @apply body-text text-ink/90;
   }
 
   .body-text-light {
-    @apply body-text text-beige-200/40;
+    @apply body-text text-beige-100;
+  }
+
+  .text-label {
+    @apply text-[11px] font-semibold uppercase tracking-[0.18em];
+  }
+
+  .text-caption {
+    @apply text-[12px] font-medium leading-[1.6];
+  }
+
+  .text-small {
+    @apply text-[11px] font-medium leading-[1.65];
   }
 
   .nav-link {
-    @apply text-[9px] font-semibold tracking-nav uppercase transition-colors;
+    @apply text-[12px] font-semibold tracking-[0.14em] uppercase transition-colors;
   }
 
   .btn-primary {
-    @apply inline-block border-[1.5px] border-beige-200 bg-beige-200 px-[2.2rem] py-[0.85rem] text-[9px] font-bold uppercase tracking-[0.22em] text-forest-800 transition-all hover:border-beige-300 hover:bg-beige-300;
+    @apply inline-block border-[1.5px] border-beige-200 bg-beige-200 px-[2.2rem] py-[0.85rem] text-[12px] font-bold uppercase tracking-[0.12em] text-forest-900 transition-all hover:border-beige-300 hover:bg-beige-300;
   }
 
   .btn-ghost {
-    @apply flex items-center gap-2 text-[9px] font-semibold uppercase tracking-nav text-beige-200/30 transition-colors hover:text-beige-200/85;
+    @apply flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-beige-100 transition-colors hover:text-beige-200;
   }
 
   .scroll-section {

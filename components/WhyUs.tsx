@@ -28,35 +28,35 @@ export default function WhyUs() {
           <SectionLabel variant="light">Warum Profil</SectionLabel>
         </RevealWrapper>
         <RevealWrapper delay={0.1}>
-          <h2 className="section-heading text-[clamp(1.8rem,2.6vw,3.2rem)] text-beige-200">
+          <h2 className="section-heading text-[clamp(1.8rem,2.6vw,3.2rem)] text-beige-100">
             Was uns
             <br />
-            <span className="section-heading-thin text-beige-200/[0.28]">
+            <span className="section-heading-thin-light">
               unterscheidet.
             </span>
           </h2>
         </RevealWrapper>
       </div>
 
-      <div className="grid grid-cols-1 gap-px border border-beige-200/5 bg-beige-200/5 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-px border border-beige-200/20 bg-beige-200/20 md:grid-cols-2 lg:grid-cols-3">
         {WHY_US_ITEMS.map((item, i) => {
           const Icon = ICONS[item.icon];
           return (
             <RevealWrapper
               key={item.title}
               delay={(i % 3) * 0.1}
-              className="bg-forest-800 p-8 transition-colors hover:bg-beige-200/[0.02] md:p-11"
+              className="bg-forest-800 p-8 transition-colors hover:bg-forest-700/50 md:p-11"
             >
               <div
-                className="mb-6 flex h-10 w-10 items-center justify-center border border-beige-200/[0.12]"
+                className="mb-6 flex h-10 w-10 items-center justify-center border border-beige-200/40"
                 aria-hidden="true"
               >
-                {Icon && <Icon className="h-[18px] w-[18px] stroke-forest-400" strokeWidth={1.5} />}
+                {Icon && <Icon className="h-[18px] w-[18px] stroke-forest-300" strokeWidth={1.5} />}
               </div>
-              <h3 className="mb-4 text-[8px] font-bold uppercase tracking-[0.25em] text-beige-200/60">
+              <h3 className="mb-4 text-[11px] font-bold uppercase tracking-[0.14em] text-beige-100">
                 {item.title}
               </h3>
-              <p className="text-[11px] font-light leading-[2] tracking-wide text-beige-200/30">
+              <p className="text-[13px] font-normal leading-[1.8] tracking-normal text-beige-200/95">
                 {item.text}
               </p>
             </RevealWrapper>

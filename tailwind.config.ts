@@ -27,8 +27,8 @@ const config: Config = {
           600: "#a09585",
         },
         ink: "#18160f",
-        mid: "#6b6455",
-        dim: "#9a9285",
+        mid: "#3d3830",
+        dim: "#4a453c",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)", "sans-serif"],

@@ -14,10 +14,10 @@ export default function SectionLabel({
   return (
     <div
       className={cn(
-        "mb-7 inline-flex items-center gap-2.5 text-[8px] font-bold uppercase tracking-label",
+        "mb-7 inline-flex items-center gap-2.5 text-label",
         variant === "light"
-          ? "text-beige-200/30 before:bg-beige-200/20"
-          : "text-forest-400 before:bg-forest-400",
+          ? "text-beige-200 before:bg-beige-200/80"
+          : "text-forest-600 before:bg-forest-600",
         "before:h-px before:w-5 before:content-['']",
         className
       )}
