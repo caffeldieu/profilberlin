@@ -1,5 +1,5 @@
 import Link from "next/link";
-import LogoMark from "./LogoMark";
+import ProfilLogo from "./ProfilLogo";
 import { COMPANY, FOOTER_SERVICES, NAV_LINKS } from "@/lib/constants";
 
 export default function Footer() {
@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="border-t border-beige-200/20 bg-forest-900 px-6 py-16 md:px-14">
       <div className="grid grid-cols-1 gap-10 border-b border-beige-200/20 pb-12 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-16">
         <div>
-          <LogoMark size="sm" dark showText className="mb-5" />
+          <ProfilLogo variant="full" theme="light" size="sm" className="mb-5" />
           <p className="max-w-[300px] text-[13px] font-normal leading-[1.75] tracking-normal text-beige-200/90">
             Unabhängige Vermögensverwaltung für private und institutionelle
             Anleger. Seit {COMPANY.founded} in Berlin.

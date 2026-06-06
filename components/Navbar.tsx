@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import LogoMark from "./LogoMark";
+import ProfilLogo from "./ProfilLogo";
 import { NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -52,7 +52,7 @@ export default function Navbar() {
         className="fixed left-0 right-0 top-0 z-[200] flex h-[68px] items-center justify-between border-b border-beige-200/20 bg-forest-900 px-6 shadow-[0_2px_12px_rgba(7,21,16,0.35)] md:px-14"
         aria-label="Hauptnavigation"
       >
-        <LogoMark dark showText />
+        <ProfilLogo variant="full" theme="light" size="md" />
 
         <ul className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (

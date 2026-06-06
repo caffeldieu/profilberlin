@@ -1,6 +1,6 @@
 import SectionLabel from "./SectionLabel";
 import RevealWrapper from "./RevealWrapper";
-import LogoMark from "./LogoMark";
+import ProfilLogo from "./ProfilLogo";
 import { PROCESS_STEPS } from "@/lib/constants";
 
 export default function Process() {
@@ -51,7 +51,7 @@ export default function Process() {
 
       <div className="hidden flex-col items-center justify-center gap-10 px-8 py-16 text-center md:flex">
         <RevealWrapper>
-          <LogoMark size="lg" dark showText={false} href="" />
+          <ProfilLogo variant="icon" theme="light" size="lg" href="" />
         </RevealWrapper>
         <RevealWrapper delay={0.2}>
           <p className="text-[11px] font-semibold uppercase leading-[1.9] tracking-[0.14em] text-beige-200/90">

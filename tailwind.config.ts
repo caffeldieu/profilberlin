@@ -26,6 +26,7 @@ const config: Config = {
           500: "#ccc5b3",
           600: "#a09585",
         },
+        brand: "#13543E",
         ink: "#18160f",
         mid: "#3d3830",
         dim: "#4a453c",

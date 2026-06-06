@@ -33,6 +33,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: [{ url: "/logo-icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/logo-icon.svg", type: "image/svg+xml" }],
+  },
 };
 
 export default function RootLayout({
